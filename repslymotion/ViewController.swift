@@ -67,6 +67,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
             startEndDayBtn.setTitle("End day", for: .normal)
             didStartDay = true
             //mockAutomotive = true
+            //restart all values
+            clearValues()
             self.startAllSystems()
         }else{
             startEndDayBtn.setTitle("Start day", for: .normal)
@@ -369,6 +371,17 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         clManager.allowsBackgroundLocationUpdates = true
         clManager.pausesLocationUpdatesAutomatically = false
         
+    }
+    
+    //MARK : Restart system
+    func clearValues(){
+        locationsWhenNotWalking.removeAll()
+        locationsWhenWalking.removeAll()
+        theMap.removeOverlays(theMap.overlays)
+        theMap.removeAnnotations(theMap.annotations)
+        gpsMileage = 0.00
+        pMeter.stopUpdates()
+        pDistance = 0.00
     }
     
     // MARK : Get data from sensors
