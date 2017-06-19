@@ -278,6 +278,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
 //                }
             }else{
                // self.pMeter.stopUpdates()
+                previousLocation = nil
                 timerForWalking.invalidate()
                 clManager.startUpdatingLocation()
                 didRequestStopCLTracking = false
@@ -364,6 +365,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
             startAllSystems()
         }
         theMap.showsCompass = true
+        
+        clManager.allowsBackgroundLocationUpdates = true
+        clManager.pausesLocationUpdatesAutomatically = false
         
     }
     

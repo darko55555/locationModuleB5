@@ -10,13 +10,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "repslymotion/ViewController.swift"
-            timestampString = "519495878.248058"
+            timestampString = "519546912.305459"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "618"
-            endingLineNumber = "618"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "622"
+            endingLineNumber = "622"
+            landmarkName = "ViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -26,13 +26,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "repslymotion/ViewController.swift"
-            timestampString = "519495878.248889"
+            timestampString = "519546912.306225"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "432"
-            endingLineNumber = "432"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "436"
+            endingLineNumber = "436"
+            landmarkName = "locationManager(_:didUpdateLocations:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
