@@ -458,7 +458,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         print("Horizontal accuracy \(horizontalAccuracy)")
         self.theMap.showsUserLocation = true
         let distanceBetweenTwoLocations = previousLocation?.distance(from: currentLocation!) ?? 0
-        gpsMileage += distanceBetweenTwoLocations
+        if distanceBetweenTwoLocations > 17 {
+            gpsMileage += distanceBetweenTwoLocations
+            
+        }
 //        if previousLocation != nil{
 //        drawMKPolyline()
 //        //drawMKPolylineFromArrayOfLocations()
